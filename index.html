@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/sun-glasses.png" type="png">
+    <link rel="stylesheet" href="style.css">
+    <title>Shopping Cart</title>
+</head>
+<body>
+<header>
+  <div class="logo"><a href="index.html"><img src="assets/sun-glasses.png" alt=""></a></div>
+  <div class="buscador">
+    <form id="search-form">
+      <div class="search-container">
+        <input autocomplete="off" list="sugerencia" type="text" id="search-input" placeholder="Filtra a través de los resultados">
+        <datalist id="sugerencia">
+          <option value="Rojas"></option>
+          <option value="Azules"></option>
+          <option value="Naranja"></option>
+          <option value="Amarillas"></option>
+        </datalist>
+      </div>
+    </form>
+  </div>
+  <div class="carrito">
+    <button id="carrito-btn"><img src="assets/shopping-cart.png" alt=""><span id="carrito-contador">0</span></button>
+    <ul id="carrito-lista">
+      <div id="carrito-total">
+        Total: $0
+      </div>
+    </ul>
+  </div>
+</header>
+<div class="container_principal">
+  <video src="assets/video-glasses.mp4" autoplay muted loop="infinite"></video>
+  <div class="overlay"></div>
+  <div class="content">
+    <h1>Landing Page</h1>
+    <p>Lading page diseñada para demostración de habilidades como, HTML, CSS y JavaScript con su programación orientada a objetos donde el proyecto se trata de un carrito de compras donde puedes agregar los productos que observarás a continuación y eliminarlos de dicho carrito.</p>
+  </div>
+</div>
+<div class="contenedor-productos">
+  <section class="productos">
+    <div class="producto" id="producto2">
+      <img src="assets/3.png" alt="Producto 2">
+  <div class="texto">
+    <h2>Gafas azules</h2>
+    <p class="precio">$50.00</p>
+    <p class="descripcion">Envío gratis</p>
+    <button type="submit">Comprar</button>
+  </div>
+    </div>
+    <div class="producto" id="producto2">
+      <img src="assets/2.png" alt="Producto 2">
+  <div class="texto">
+    <h2>Gafas rojas</h2>
+    <p class="precio">$75.00</p>
+    <p class="descripcion">Envío gratis</p>
+    <button type="submit">Comprar</button>
+  </div>
+    </div>
+    <div class="producto" id="producto2">
+      <img src="assets/4.png" alt="Producto 2">
+  <div class="texto">
+    <h2>Gafas naranja</h2>
+    <p class="precio">$50.00</p>
+    <p class="descripcion">Envío gratis</p>
+    <button type="submit">Comprar</button>
+  </div>
+    </div>
+    <div class="producto" id="producto2">
+    <img src="assets/5.png" alt="Producto 2">
+  <div class="texto">
+    <h2>Gafas amarillas</h2>
+    <p class="precio">$50.00</p>
+    <p class="descripcion">Envío gratis</p>
+    <button type="submit">Comprar</button>
+  </div>
+  
+    </div>
+  </section>
+</div>
+<footer>
+  <p>Sebastián Ruiz | Front-End Developer <br>&<br>Fernando Ruiz | 3D Designer</p>
+</footer>
+<script src="buscador.js"></script>
+<script src="carrito.js"></script>
+</body>
+</html>
